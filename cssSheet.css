@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#header {
+  font-family: fantasy;
+}
+
+#b {
+  background-image: linear-gradient(92.88deg, rgb(232, 70, 102) 0%, rgb(255, 92, 125)  20%, rgb(200, 121, 139) 40%, rgb(170, 164, 173) 60%, rgb(123, 222, 129) 80%, rgb(160, 228, 165) 100%);
+  border-radius: 8px;
+  color: #000000;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 2rem;
+  padding: 0 1.6rem;
+  text-align: center;
+}
+
+table {
+  width: 400px;
+  height: 400px;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 10px solid #000;
+  background-color: rgb(223, 236, 255);
+}
+
+td {
+  padding: 0;
+  border: 10px solid #000;
+  height: 100px;
+  width: 136px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: relative; 
+  
+}
+
+td img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 30px;
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 30px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 30px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 30px;
+}
+
+
+.x-cell
+{
+  background-color: rgb(255, 92, 125); 
+}
+.o-cell
+{
+  background-color: rgb(160, 228, 165); 
+}
+
+.buttonPlace{
+  border-style: ridge;
+  border-radius: 30px;
+  border-width: 5px;
+  border-color:#000;
+  justify-content: center;
+  text-align:center;
+  margin-left : 100px;
+  width: 455px;
+  height: 190px;
+  background-color: rgb(223, 236, 255);
+}

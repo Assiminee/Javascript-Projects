@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="cssSheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body ng-app="tictactoeApp" ng-controller="TicTacToeController">
+    <center>
+        <h1 id="header">TIC TAC TOE</h1>
+    </center>
+    <div class="container">
+        <table class="overlay-table">
+            <tr ng-repeat="row in [0, 1, 2]">
+              <td ng-repeat="cell in [0, 1, 2]" 
+              ng-attr-id="{{ getCellId($parent.$index, $index) }}" 
+              ng-click="makeMove($parent.$index, $index)">  
+              </td>
+            </tr>
+          </table>
+        <div class="buttonPlace">
+            <h3>{{ score }}</h3>
+            <h3>{{ currentMove }} joue</h3>
+            <h3>{{ winnerText }}</h3>
+            <button id="b" ng-click="resetScore()">Mettre à jour le score</button>
+        </div>
+    </div>
+</body>
+
+
+</html>
